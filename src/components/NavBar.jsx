@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import { FiMenu, FiX, FiSun, FiMoon } from "react-icons/fi";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const sections = [
-  { id: "hero-section", label: "Home" },
+  { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
@@ -10,7 +12,7 @@ const sections = [
 ];
 
 function NavBar() {
-  const [active, setActive] = useState("hero-section");
+  const [active, setActive] = useState("home");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const observerRef = useRef(null);
 
@@ -57,10 +59,11 @@ function NavBar() {
      shadow-md border-b-2 
      border-[var(--color-accent)]"
     >
-      <div className="flex items-center justify-between px-4 py-3 mx-auto max-w-7xl">
-        <h1 className="text-lg font-bold text-[var(--color-text)] font-poppins">
-          Umar Farouq
-        </h1>
+      <div className="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl">
+        <div className="flex items-center space-x-4">
+          <FaReact size={30} />
+          <RiTailwindCssFill size={30} />
+        </div>
 
         <ul className="hidden space-x-8 md:flex font-inter">
           {sections.map((section) => (
@@ -71,7 +74,7 @@ function NavBar() {
                   hover:text-[white] hover:underline decoration-[var(--color-accent)]
                   ${
                     active === section.id
-                      ? "font-bold"
+                      ? "font-bold underline decoration-[var(--color-accent)]"
                       : "text-[var(--color-text)]"
                   }`}
               >

@@ -8,6 +8,7 @@ const skillsData = {
     { name: "CSS3", icon: "src/assets/icons/icons8-css-96.svg" },
     { name: "JavaScript", icon: "src/assets/icons/javascript-svgrepo-com.svg" },
     { name: "React", icon: "src/assets/icons/react-svgrepo-com.svg" },
+    { name: "TailwindCss", icon: "src/assets/icons/tailwindcss.png"}
   ],
 
   "Data Analysis": [
