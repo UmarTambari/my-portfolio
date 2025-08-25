@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
-function ProjectCard({ icon, title, description, githubLink }) {
+export default function ProjectCard({ icon, title, description, githubLink }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -21,18 +22,10 @@ function ProjectCard({ icon, title, description, githubLink }) {
         <p className="text-center text-gray-200">{description}</p>
       )}
       {githubLink && (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <button className="p-2 transition rounded-full hover:bg-green-300">
-            <img
-              src="/src/assets/icons/github-color-svgrepo-com.svg"
-              alt="GitHub"
-              className="w-10"
-            />
-          </button>
-        </a>
+        <FaGithub size={35} className="hover:text-[var(--color-accent)] transition">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer"></a>
+        </FaGithub>
       )}
     </motion.div>
   );
 }
-
-export default ProjectCard;
