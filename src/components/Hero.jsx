@@ -28,12 +28,16 @@ function HeroSection() {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button as="a" href="#projects" className="px-6 py-3">
-            View My Work
-          </Button>
-          <Button as="a" href="#contact" className="px-5 py-3">
-            Contact Me
-          </Button>
+          <a href="#projects">
+            <Button>
+              View Projects
+            </Button>
+          </a>
+          <a href="#contact">
+            <Button>
+              Contact Me
+            </Button>
+          </a>
         </div>
       </div>
     </section>

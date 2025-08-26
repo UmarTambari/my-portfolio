@@ -16,40 +16,40 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const observerRef = useRef(null);
 
-  // Handle section intersection
+  // Handling section intersection
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "5% 0px -70% 0px",
-      threshold: 0,
-    };
+  const observerOptions = {
+    root: null,
+    rootMargin: "-25% 0px -70% 0px", 
+    threshold: 0,
+  };
 
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActive(entry.target.id);
-        }
-      });
-    };
-
-    observerRef.current = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
-
-    sections.forEach((section) => {
-      const element = document.getElementById(section.id);
-      if (element) {
-        observerRef.current.observe(element);
+  const observerCallback = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
       }
     });
+  };
 
-    return () => {
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, []);
+  observerRef.current = new IntersectionObserver(
+    observerCallback,
+    observerOptions
+  );
+
+  sections.forEach((section) => {
+    const element = document.getElementById(section.id);
+    if (element) {
+      observerRef.current.observe(element);
+    }
+  });
+
+  return () => {
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+  };
+}, []);
 
   return (
     <nav

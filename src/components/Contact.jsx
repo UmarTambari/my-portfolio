@@ -1,6 +1,7 @@
 import { useState } from "react";
 import FormInput from "./FormInput";
 import SocialLinks from "../ui/SocialLinks";
+import Button from "../ui/Button";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -91,12 +92,9 @@ export default function Contact() {
           />
 
           <div className="text-center">
-            <button
-              type="submit"
-              className="bg-[var(--color-accent)] px-4 py-2 rounded-2xl transition-transform hover:scale-105 hover:border border-gray-200"
-            >
+            <Button>
               Send Message
-            </button>
+            </Button>
           </div>
         </form>
 

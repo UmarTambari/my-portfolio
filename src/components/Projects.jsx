@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Button from "../ui/Button";
 import reactLogo from "../assets/icons/react-svgrepo-com.svg";
-import javascriptLogo from "../assets/icons/javascript-svgrepo-com.svg";
+import pythonlogo from "../assets/icons/python-svgrepo-com.svg";
 
 export default function Projects() {
   return (
@@ -38,7 +38,7 @@ export default function Projects() {
         />
 
         <ProjectCard
-          icon={javascriptLogo}
+          icon={pythonlogo}
           title="Coming soon..."
         />
       </div>

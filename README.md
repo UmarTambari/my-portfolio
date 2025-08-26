@@ -1,12 +1,81 @@
-# React + Vite
+🌐 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio built with React, Vite, and Tailwind CSS.
+It showcases my skills, projects, and contact information in a clean, responsive, and modern design.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Fast & Modern — Built with Vite
+ for super-fast bundling.
 
-## Expanding the ESLint configuration
+🎨 Tailwind CSS — Utility-first styling for a consistent and responsive layout.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🌀 Smooth Animations — Powered by Framer Motion
+ for subtle transitions and hover effects.
+
+📱 Responsive Design — Works seamlessly across desktop and mobile devices.
+
+🔗 Social Links & Contact Form — Easy ways to connect with me.
+
+📂 Projects Section — Highlighting my work and case studies.
+
+🚀 Tech Stack
+
+React (Vite) ⚛️
+
+Tailwind CSS 🎨
+
+Framer Motion 🌀
+
+React Icons 🔗
+
+
+🔧 Setup & Installation
+
+Clone the repository:
+
+git clone https://github.com/UmarTambari/my-portfolio-repo.git
+
+
+Navigate into the project folder:
+
+cd my-portfolio-repo
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+Build for production:
+
+npm run build
+
+🌍 Deployment
+
+This portfolio can be deployed easily on:
+
+GitHub Pages
+
+Vercel
+
+Netlify
+
+📬 Contact
+
+If you’d like to connect, feel free to reach out via:
+
+Email: umarmubay360@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/umar-farouq-ibrahim
+
+Twitter/X: https://x.com/alpha__101
+
+📜 License
+
+This project is licensed under the MIT License.

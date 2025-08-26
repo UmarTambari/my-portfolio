@@ -5,9 +5,9 @@ export default function Button({ children, onClick, type = "button" }) {
       onClick={onClick}
       className="
         bg-[var(--color-accent)]
-        text-[var(--color-surface)]
+        text-[var(--color-bg)]
         font-[var(--font-body)]
-        px-5 py-2.5
+        px-4 py-2.5
         rounded-xl
         shadow-md
         transition-colors duration-200

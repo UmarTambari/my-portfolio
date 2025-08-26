@@ -41,16 +41,17 @@ export default function SocialLinks({
       )}
       <div className="flex flex-wrap justify-center gap-6">
         {links.map((link) => (
-          <a
-            key={link.name}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-[var(--color-accent)] transition"
-          >
-            {link.icon}
+          <div key={link.name} className="flex items-center gap-2">
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-text)] transition transform hover:scale-110 hover:text-[var(--color-accent)]"
+            >
+              <span className="block text-2xl sm:text-xl">{link.icon}</span>
+            </a>
             <span className="text-[var(--color-text)]">{link.name}</span>
-          </a>
+          </div>
         ))}
       </div>
     </div>
