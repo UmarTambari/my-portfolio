@@ -32,10 +32,20 @@ export default function Contact() {
       className="min-h-screen py-20 bg-[var(--color-bg)] border-b-2 border-[var(--color-accent)]"
     >
       <div className="px-6 mx-auto max-w-7xl">
-        <h2 className="text-4xl font-bold text-center text-[var(--color-text)] underline decoration-[var(--color-accent)] mb-6">
+        <h2 className="text-4xl
+        font-[var(--font-heading)]
+        text-center 
+        text-[var(--color-text)] 
+        underline 
+        decoration-[var(--color-accent)] mb-6">
           Contact
         </h2>
-        <p className="max-w-2xl mx-auto mb-12 text-lg text-center text-gray-200">
+        <p className="max-w-2xl 
+        mx-auto mb-12 
+        text-lg 
+        text-center 
+        text-gray-200
+        font-[var(--font-body)]">
           Got a question, proposal, or just want to say hello? Drop me a message
           and I’ll get back to you.
         </p>

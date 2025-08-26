@@ -15,13 +15,20 @@ function About() {
       <div className="flex flex-col justify-center w-full space-y-6 text-center md:w-1/2 md:text-left">
         <h1
           className="text-3xl md:text-4xl 
-        font-bold text-[var(--color-text)] 
+        font-[var(--font-heading)]
+        text-[var(--color-text)] 
         underline 
         decoration-[var(--color-accent)]"
         >
           About Me
         </h1>
-        <p className="text-base leading-relaxed text-gray-200 md:text-lg">
+        <p
+          className="text-base 
+        leading-relaxed 
+        text-gray-200 
+        md:text-lg
+        font-[var(--font-raleway)]"
+        >
           I’m a Computer Science major with a strong passion for technology and
           problem-solving. My primary focus is on front-end web development,
           where I build clean, responsive interfaces using modern technologies.
@@ -38,7 +45,13 @@ function About() {
         <img
           src={heroImg}
           alt="my avatar"
-          className="object-cover w-64 h-64 border-4 border-gray-400 rounded-full shadow-lg md:w-96 md:h-96"
+          className="object-cover 
+          w-64 h-64 
+          border-4 
+          border-gray-400 
+          rounded-full 
+          shadow-lg 
+          md:w-96 md:h-96"
         />
       </div>
     </section>

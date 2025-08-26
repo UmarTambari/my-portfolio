@@ -18,13 +18,23 @@ export default function ProjectCard({ icon, title, description, githubLink }) {
   hover:shadow-green-400/50"
     >
       <img src={icon} alt={title} className="w-12 h-12" />
-      {description && (
-        <p className="text-center text-gray-200">{description}</p>
+      {title && (
+        <>
+          <p className="text-center text-gray-200 font-[var(--font-body)]">
+            {title}
+          </p>
+          <p className="text-center text-gray-200 font-[var(--font-body)]">
+            {description}
+          </p>
+        </>
       )}
       {githubLink && (
-        <FaGithub size={35} className="hover:text-[var(--color-accent)] transition">
-          <a href={githubLink} target="_blank" rel="noopener noreferrer"></a>
-        </FaGithub>
+        <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <FaGithub
+            size={30}
+            className="hover:text-[var(--color-accent)] transition"
+          />
+        </a>
       )}
     </motion.div>
   );

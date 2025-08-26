@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Button from "../ui/Button";
+import reactLogo from "../assets/icons/react-svgrepo-com.svg";
+import javascriptLogo from "../assets/icons/javascript-svgrepo-com.svg";
 
 export default function Projects() {
   return (
@@ -19,23 +21,24 @@ export default function Projects() {
         transition={{ duration: 0.2 }}
         viewport={{ once: true }}
         className="underline 
-        decoration-[var(--color-accent)] 
         text-center
-        font-bold text-3xl mb-12"
+        text-3xl mb-12
+        font-[var(--font-heading)]
+        decoration-[var(--color-accent)]" 
       >
         Projects
       </motion.h1>
 
       <div className="grid max-w-5xl grid-cols-1 gap-10 mx-auto sm:grid-cols-2">
         <ProjectCard
-          icon="src/assets/icons/react-svgrepo-com.svg"
+          icon={reactLogo}
           title="Personal Portfolio"
           description="A modern portfolio built using React and TailwindCSS"
-          githubLink="https://github.com/yourusername/your-portfolio"
+          githubLink="https://github.com/UmarTambari/my-portfolio"
         />
 
         <ProjectCard
-          icon="src/assets/icons/javascript-svgrepo-com.svg"
+          icon={javascriptLogo}
           title="Coming soon..."
         />
       </div>

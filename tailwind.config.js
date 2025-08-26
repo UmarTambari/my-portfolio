@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0f172a",  // example custom color
+        primary: "#0f172a",
       },
+      font: {
+        body: "var(--font-body)",
+        heading: "var(--font-heading)",
+        raleway: "var(--font-raleway)"
+      }
     },
   },
   plugins: [],

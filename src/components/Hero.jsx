@@ -12,13 +12,17 @@ function HeroSection() {
     >
       <div className="max-w-2xl">
         <h1
-          className="mb-4 text-4xl font-bold
+          className="mb-4 text-4xl
         text-[var(--color-text)] 
-        sm:text-5xl lg:text-6xl"
+        sm:text-5xl lg:text-6xl
+        font-[var(--font-heading)]"
         >
           Umar Farouq
         </h1>
-        <p className="mb-8 text-lg text-[var(--color-text)] sm:text-xl">
+        <p className="mb-8 text-lg 
+        text-[var(--color-text)] 
+        sm:text-xl
+        font-[var(--font-raleway)]">
           A passionate front-end developer with a knack for building both
           beautiful and functional UI/UX.
         </p>

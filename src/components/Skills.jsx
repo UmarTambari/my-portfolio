@@ -1,19 +1,26 @@
 import { motion } from "framer-motion";
-import SkillCard from "./SkillCard";
 import Button from "../ui/Button";
+import SkillCard from "./SkillCard";
+import html5 from "../assets/icons/icons8-html.svg";
+import css3 from "../assets/icons/icons8-css-96.svg";
+import excel from "../assets/icons/excel-svgrepo-com.svg"
+import react from "../assets/icons/react-svgrepo-com.svg";
+import tailwindcss from "../assets/icons/tailwindcss.png";
+import python from "../assets/icons/python-svgrepo-com.svg";
+import javascript from "../assets/icons/javascript-svgrepo-com.svg";
 
 const skillsData = {
   "Web Development": [
-    { name: "HTML5", icon: "src/assets/icons/icons8-html.svg" },
-    { name: "CSS3", icon: "src/assets/icons/icons8-css-96.svg" },
-    { name: "JavaScript", icon: "src/assets/icons/javascript-svgrepo-com.svg" },
-    { name: "React", icon: "src/assets/icons/react-svgrepo-com.svg" },
-    { name: "TailwindCss", icon: "src/assets/icons/tailwindcss.png"}
+    { name: "HTML5", icon:  html5  },
+    { name: "CSS3", icon: css3 },
+    { name: "JavaScript", icon: javascript },
+    { name: "React", icon: react },
+    { name: "TailwindCss", icon: tailwindcss }
   ],
 
   "Data Analysis": [
-    { name: "Python", icon: "src/assets/icons/python-svgrepo-com.svg" },
-    { name: "MS Excel", icon: "src/assets/icons/excel-svgrepo-com.svg" },
+    { name: "Python", icon: python },
+    { name: "MS Excel", icon: excel },
   ],
 };
 
@@ -45,8 +52,8 @@ function Skills() {
         <h2
           id="skills-heading"
           className="text-3xl 
-          sm:text-4xl 
-          font-bold 
+          sm:text-4xl
+          font-[var(--font-heading)] 
           text-center
           text-[var(--color-text)]
           mb-10 underline 
@@ -67,14 +74,19 @@ function Skills() {
               <h3
                 className="mb-6 
               text-xl 
-              font-semibold 
+              font-[var(--font-raleway)]
               text-center 
-              text-[var(--color-text)] sm:text-2xl"
+              text-[var(--color-text)] 
+              sm:text-2xl"
               >
                 {category}
               </h3>
 
-              <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+              <div className="grid 
+              grid-cols-2 
+              gap-6 
+              sm:grid-cols-3 
+              md:grid-cols-4">
                 {items.map((skill) => (
                   <SkillCard
                     key={skill.name}

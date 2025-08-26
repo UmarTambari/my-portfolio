@@ -9,4 +9,7 @@
   --color-accent-hover: #0ea5e9;
   --color-accent-active: #0284c7;
   --color-text: #f8fafc;
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
 }
