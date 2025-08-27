@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function SocialLinks({
-  heading = "You can also contact me at:",
+  heading = "You can also connect with me on:",
 }) {
   const links = [
     {
@@ -50,7 +50,6 @@ export default function SocialLinks({
             >
               <span className="block text-2xl sm:text-xl">{link.icon}</span>
             </a>
-            <span className="text-[var(--color-text)]">{link.name}</span>
           </div>
         ))}
       </div>
