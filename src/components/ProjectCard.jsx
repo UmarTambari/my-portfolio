@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
+import { BsArrowUpRightSquare } from "react-icons/bs";
+import { p } from "framer-motion/client";
 
-export default function ProjectCard({ icon, title, description, githubLink }) {
+export default function ProjectCard({
+  icon,
+  title,
+  image,
+  description,
+  live,
+  githubLink,
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -28,14 +37,34 @@ export default function ProjectCard({ icon, title, description, githubLink }) {
           </p>
         </>
       )}
-      {githubLink && (
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <FaGithub
-            size={30}
-            className="hover:text-[var(--color-accent)] transition"
-          />
-        </a>
+      {image && (
+        <img
+          src={image}
+          alt="project image"
+          className="w-full h-auto mt-2 rounded-md"
+        />
       )}
+      <div className="flex items-center gap-6 mt-4">
+        {live && (
+          <div className="flex items-center gap-1">
+            <p className="mr-1">View Live</p>
+            <a href={live} target="_blank" rel="noopener noreferrer">
+              <BsArrowUpRightSquare
+                size={30}
+                className="hover:text-[var(--color-accent)] transition"
+              />
+            </a>
+          </div>
+        )}
+        {githubLink && (
+          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+            <FaGithub
+              size={30}
+              className="hover:text-[var(--color-accent)] transition"
+            />
+          </a>
+        )}
+      </div>
     </motion.div>
   );
 }

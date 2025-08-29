@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Button from "../ui/Button";
 import reactLogo from "../assets/icons/react-svgrepo-com.svg";
-import pythonlogo from "../assets/icons/python-svgrepo-com.svg";
+import tailwindLogo from "../assets/icons/tailwindcss.png"
+import dashboardImage from "../assets/images/dashboardImage.png";
+import portfolioImage from "../assets/images/portfolioImage.png"
 
 export default function Projects() {
   return (
@@ -34,12 +36,18 @@ export default function Projects() {
           icon={reactLogo}
           title="Personal Portfolio"
           description="A modern portfolio built using React and TailwindCSS"
+          image={portfolioImage}
+          live="#"
           githubLink="https://github.com/UmarTambari/my-portfolio"
         />
 
         <ProjectCard
-          icon={pythonlogo}
-          title="Coming soon..."
+          icon={[reactLogo]}
+          title="Admin Dashboard"
+          description="An Admin dashboard for a fictional company to track its performance, users, progress, and growth."
+          image={dashboardImage}
+          live="https://admin-dashboard-sigma-one-46.vercel.app/"
+          githubLink="https://github.com/UmarTambari360/admin-dashboard"
         />
       </div>
 
@@ -47,7 +55,7 @@ export default function Projects() {
         id="projects-button"
         className="flex justify-center m-16 align-center"
       >
-        <Button as="a">See All Projects</Button>
+        {/* <Button as="a">See All Projects</Button> */}
       </div>
     </section>
   );
